@@ -10,3 +10,4 @@ The Mod is being developed for **Minecraft 1.20.2 !** And it is currently *In Pr
 - Increased Hunger Degeneration
 - Full Moon Nights are especially dangerous
 - Health regenerates slower
+- Movement speed decreases with low health
