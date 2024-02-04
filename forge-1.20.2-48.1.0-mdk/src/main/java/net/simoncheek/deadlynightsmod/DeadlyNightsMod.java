@@ -1,6 +1,7 @@
 package net.simoncheek.deadlynightsmod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -11,6 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.simoncheek.deadlynightsmod.item.ModItems;
 import org.slf4j.Logger;
 
 @Mod(DeadlyNightsMod.MODID)
@@ -20,6 +22,8 @@ public class DeadlyNightsMod {
 
     public DeadlyNightsMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -32,7 +36,11 @@ public class DeadlyNightsMod {
     private void commonSetup(final FMLCommonSetupEvent event) {
     }
 
+    // ALSO ITEM SPECIFIC, EDIT LATER. SPECIFIES THE CREATIVE TAB TO PLACE
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.ENHANCED_DIAMOND_SWORD);
+        }
     }
 
 
