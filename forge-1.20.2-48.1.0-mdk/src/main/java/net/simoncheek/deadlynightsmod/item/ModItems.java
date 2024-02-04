@@ -1,6 +1,9 @@
 package net.simoncheek.deadlynightsmod.item;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -13,7 +16,11 @@ public class ModItems {
 
     // THIS IS ITEM SPECIFIC, EDIT THIS LATER TO INPUT OWN ITEM
     public static final RegistryObject<Item> ENHANCED_DIAMOND_SWORD = ITEMS.register("enhanced_diamond_sword",
-            () -> new Item(new Item.Properties()));
+            () -> new SwordItem(Tiers.DIAMOND,8,-3,
+                    new Item.Properties()
+                            .stacksTo(1)
+                            .defaultDurability(1600)
+            ));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
