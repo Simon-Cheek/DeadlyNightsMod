@@ -4,7 +4,11 @@ Welcome to the Deadly Nights Mod! This mod is being developed as a means of prac
 
 The Mod is being developed for **Minecraft 1.20.2 !** And it is currently *In Progress*
 
-## Features
+## Features Already Added
+- Enhanced Diamond Sword, a more powerful diamond sword crafted using diamond blocks
+
+## Upcoming Features / Features Being Considered
+- Other Enhanced Swords
 - Increased Mob Spawn Rate
 - Chance of 'deadly' mob spawn, which are mobs with augmented abilities (increased damage, hunger, etc)
 - Increased Hunger Degeneration
