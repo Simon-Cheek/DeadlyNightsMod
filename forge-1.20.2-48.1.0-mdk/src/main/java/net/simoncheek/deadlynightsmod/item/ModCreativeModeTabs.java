@@ -23,7 +23,10 @@ public class ModCreativeModeTabs {
 
                                 // PUT ALL ITEMS IN THE CREATIVE TAB HERE IN THIS FORMAT
 
+                                pOutput.accept(ModItems.ENHANCED_IRON_SWORD.get());
+                                pOutput.accept(ModItems.ENHANCED_GOLD_SWORD.get());
                                 pOutput.accept(ModItems.ENHANCED_DIAMOND_SWORD.get());
+
                             })
                             .build());
 

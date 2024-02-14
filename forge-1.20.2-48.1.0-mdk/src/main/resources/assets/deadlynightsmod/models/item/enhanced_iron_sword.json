@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "deadlynightsmod:item/enhanced_iron_sword"
+  }
+}

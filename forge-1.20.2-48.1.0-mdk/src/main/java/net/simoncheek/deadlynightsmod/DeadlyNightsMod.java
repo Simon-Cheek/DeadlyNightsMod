@@ -42,6 +42,8 @@ public class DeadlyNightsMod {
     // ALSO ITEM SPECIFIC, EDIT LATER. SPECIFIES THE CREATIVE TAB TO PLACE
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.ENHANCED_IRON_SWORD);
+            event.accept(ModItems.ENHANCED_GOLD_SWORD);
             event.accept(ModItems.ENHANCED_DIAMOND_SWORD);
         }
     }

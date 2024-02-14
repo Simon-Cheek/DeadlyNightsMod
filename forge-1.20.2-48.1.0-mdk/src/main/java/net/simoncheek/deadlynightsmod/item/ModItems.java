@@ -22,6 +22,20 @@ public class ModItems {
                             .defaultDurability(1600)
             ));
 
+    public static final RegistryObject<Item> ENHANCED_GOLD_SWORD = ITEMS.register("enhanced_gold_sword",
+            () -> new SwordItem(Tiers.GOLD,8,-3,
+                    new Item.Properties()
+                            .stacksTo(1)
+                            .defaultDurability(200)
+            ));
+
+    public static final RegistryObject<Item> ENHANCED_IRON_SWORD = ITEMS.register("enhanced_iron_sword",
+            () -> new SwordItem(Tiers.IRON,8,-3,
+                    new Item.Properties()
+                            .stacksTo(1)
+                            .defaultDurability(450)
+            ));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
