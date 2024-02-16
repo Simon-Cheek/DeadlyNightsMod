@@ -16,21 +16,21 @@ public class ModItems {
 
     // THIS IS ITEM SPECIFIC, EDIT THIS LATER TO INPUT OWN ITEM
     public static final RegistryObject<Item> ENHANCED_DIAMOND_SWORD = ITEMS.register("enhanced_diamond_sword",
-            () -> new SwordItem(Tiers.DIAMOND,8,-3,
+            () -> new CustomSwordItem(Tiers.DIAMOND,8,-3,
                     new Item.Properties()
                             .stacksTo(1)
                             .defaultDurability(1600)
             ));
 
     public static final RegistryObject<Item> ENHANCED_GOLD_SWORD = ITEMS.register("enhanced_gold_sword",
-            () -> new SwordItem(Tiers.GOLD,8,-3,
+            () -> new CustomSwordItem(Tiers.GOLD,8,-3,
                     new Item.Properties()
                             .stacksTo(1)
                             .defaultDurability(200)
             ));
 
     public static final RegistryObject<Item> ENHANCED_IRON_SWORD = ITEMS.register("enhanced_iron_sword",
-            () -> new SwordItem(Tiers.IRON,8,-3,
+            () -> new CustomSwordItem(Tiers.IRON,8,-3,
                     new Item.Properties()
                             .stacksTo(1)
                             .defaultDurability(450)
